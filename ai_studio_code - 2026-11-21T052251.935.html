@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Viewport: Zoom Disabled -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <!-- SEO Meta Tags - OPTIMIZED FOR RANKING -->
+    <title>GOALZEN - Global No.1 Live Sports Streaming App (v2.3)</title>
+    <meta name="description" content="Download GOALZEN APK v2.3. Watch live cricket, IPL 2026, football, UCL, La Liga, WWE, and global TV channels in Ultra HD. Free, Anti-Ban, and No Ads streaming app for Android.">
+    <meta name="keywords" content="GOALZEN, GOALZEN APK, Live Cricket Streaming, IPL Live Match 2026, UCL Live Streaming, La Liga Live Stream, Premier League Live, Football Streaming App, Free Sports App Android, Best Cricket App, Watch IPL Free, GOALZEN App Download, Live Sports TV APK">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://livxow.site/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://livxow.site/">
+    <meta property="og:title" content="GOALZEN - Global No.1 Live Sports App">
+    <meta property="og:description" content="Download GOALZEN APK. Watch Live IPL, Cricket & Football in HD with Zero Buffering.">
+    <meta property="og:image" content="https://i.ibb.co/6R9b0nm0/1000341018.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://livxow.site/">
+    <meta property="twitter:title" content="GOALZEN - Global No.1 Live Sports App">
+    <meta property="twitter:description" content="Download GOALZEN APK. Watch Live Sports, Cricket & Football in HD with Zero Buffering.">
+    <meta property="twitter:image" content="https://i.ibb.co/6R9b0nm0/1000341018.jpg">
+
+    <!-- JSON-LD Schema for Google Ranking -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "GOALZEN",
+      "operatingSystem": "Android",
+      "applicationCategory": "SportsApplication",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1050000"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+    </script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+    <!-- Preload Critical Assets -->
+    <link rel="preload" as="image" href="logo.jpg" fetchpriority="high">
+    
+    <!-- Optimized Font Loading (Async) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (Non-blocking) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
+    
+    <style>
+        /* ============ GLOBAL STYLES ============ */
+        html { scroll-behavior: smooth; }
+        body { background-color: #050505; color: #eeeeee; margin: 0; font-family: 'Poppins', sans-serif; text-align: center; overflow-x: hidden; }
+        * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+        /* Navbar */
+        .navbar { display: flex; align-items: center; justify-content: space-between; padding: 15px 20px; background: #0a0a0a; box-shadow: 0 4px 20px rgba(0,0,0,0.8); position: sticky; top: 0; z-index: 100; border-bottom: 1px solid rgba(255, 215, 0, 0.1); }
+        .nav-brand { display: flex; align-items: center; gap: 12px; cursor: pointer; }
+        
+        /* Fixed Nav Logo: No Zoom, Fit inside circle */
+        .nav-logo-box { width: 45px; height: 45px; border-radius: 50%; overflow: hidden; background: linear-gradient(#000, #000) padding-box, linear-gradient(45deg, #FFD700, #B8860B) border-box; border: 2px solid transparent; box-shadow: 0 0 15px rgba(255, 215, 0, 0.2); display: flex; align-items: center; justify-content: center; }
+        .nav-logo-box img { width: 100%; height: 100%; object-fit: contain; }
+        
+        .brand-name { font-size: 20px; font-weight: 700; letter-spacing: 0.5px; color: #fff; }
+        .brand-name span { color: #FFD700; }
+        
+        /* Container -> Main */
+        main { max-width: 600px; margin: 0 auto; padding: 40px 20px 0 20px; min-height: 80vh; }
+
+        /* Smooth Fade Animation */
+        .fade-in { animation: fadeIn 0.4s ease-in-out; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+        /* ============ HOME SECTION STYLES ============ */
+        /* Fixed Main Logo: No Zoom, Fit inside circle */
+        .main-logo-box { width: 150px; height: 150px; border-radius: 50%; overflow: hidden; background: linear-gradient(#050505, #050505) padding-box, linear-gradient(45deg, #FFD700, #B8860B, #FFEA00, #DAA520) border-box; border: 3px solid transparent; box-shadow: 0 0 40px rgba(255, 215, 0, 0.3); display: flex; align-items: center; justify-content: center; margin: 0 auto 25px auto; }
+        .main-logo-img { width: 100%; height: 100%; object-fit: contain; }
+        
+        h1 { font-size: 28px; line-height: 1.3; margin: 0 0 15px 0; font-weight: 700; }
+        .highlight { color: #FFD700; }
+        .short-desc { font-size: 14px; color: #ccc; line-height: 1.6; margin-bottom: 25px; padding: 0 15px; }
+        .meta-info { display: flex; justify-content: center; gap: 12px; font-size: 12px; color: #ddd; margin-bottom: 30px; flex-wrap: wrap; }
+        .meta-info span { display: flex; align-items: center; gap: 5px; background: #151515; padding: 6px 10px; border-radius: 6px; border: 1px solid #333; }
+        .meta-info i { color: #3b82f6; }
+        
+        .download-btn { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 12px 30px; font-size: 16px; font-weight: 600; border-radius: 8px; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); border: 1px solid #3b82f6; transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1); min-width: 200px; cursor: pointer; }
+        .download-btn:active { transform: scale(0.96); }
+        
+        .text-content { margin-top: 40px; text-align: left; padding: 0 10px; }
+        .text-content p { color: #bbb; font-size: 14px; line-height: 1.7; margin-bottom: 20px; }
+
+        .info-box-home { background: #111; border: 1px solid rgba(255, 215, 0, 0.1); border-radius: 15px; padding: 30px 20px; margin-top: 30px; text-align: left; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .info-box-home h2 { font-size: 22px; color: #FFD700; margin-bottom: 15px; font-weight: 700; text-align: center; }
+        .info-box-home p { font-size: 14px; color: #ccc; line-height: 1.7; margin-bottom: 15px; }
+
+        /* APK Details Card */
+        .apk-details-card { background: #111; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 15px; padding: 25px; margin-top: 30px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); overflow: hidden; }
+        .apk-details-header { font-size: 24px; font-weight: 700; color: #FFD700; margin-bottom: 10px; }
+        .apk-details-sub { font-size: 13px; color: #888; margin-bottom: 25px; }
+        .details-logo-wrap { width: 80px; height: 80px; margin: 0 auto 25px auto; border-radius: 50%; overflow: hidden; border: 2px solid #FFD700; background: #000; display: flex; align-items: center; justify-content: center; }
+        .details-logo-wrap img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.2) translateY(-5%); }
+        .detail-row { display: flex; justify-content: space-between; align-items: center; padding: 12px 0; border-bottom: 1px solid #222; }
+        .detail-row:last-of-type { border-bottom: none; margin-bottom: 25px; }
+        .d-label { color: #888; font-size: 14px; }
+        .d-val { color: #fff; font-size: 14px; font-weight: 600; }
+        .badge-ver { background: #222; padding: 2px 8px; border-radius: 4px; font-size: 12px; border: 1px solid #333; }
+        .badge-free { background: rgba(76, 175, 80, 0.15); color: #4caf50; padding: 2px 8px; border-radius: 4px; font-size: 12px; }
+        .btn-centered-blue { display: flex; align-items: center; justify-content: center; width: 100%; background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 15px; border-radius: 10px; font-weight: 700; font-size: 16px; text-decoration: none; cursor: pointer; box-shadow: 0 5px 15px rgba(37, 99, 235, 0.4); transition: 0.3s; border: 1px solid #3b82f6; margin-top: 10px; }
+        .btn-centered-blue:active { transform: scale(0.98); }
+
+        /* What's New */
+        .wn-container { margin-top: 50px; text-align: left; }
+        .wn-header { font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 10px; text-align: center; }
+        .wn-sub { color: #888; font-size: 14px; margin-bottom: 25px; text-align: center; }
+        .wn-card { background: #111; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 20px; margin-bottom: 15px; display: flex; align-items: flex-start; gap: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+        .wn-icon { width: 45px; height: 45px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+        .wn-icon.green { background: rgba(76, 175, 80, 0.15); color: #4caf50; }
+        .wn-icon.blue { background: rgba(37, 99, 235, 0.15); color: #3b82f6; }
+        .wn-icon.purple { background: rgba(156, 39, 176, 0.15); color: #ab47bc; }
+        .wn-icon.orange { background: rgba(255, 152, 0, 0.15); color: #ff9800; }
+        .wn-content h4 { margin: 0 0 5px 0; color: #fff; font-size: 15px; font-weight: 700; }
+        .wn-content p { margin: 0; color: #aaa; font-size: 13px; line-height: 1.5; }
+        .safety-box { background: rgba(76, 175, 80, 0.05); border: 1px solid #4caf50; border-radius: 12px; padding: 20px; margin-top: 25px; text-align: left; }
+        .safety-title { color: #4caf50; font-weight: 700; font-size: 16px; margin-bottom: 5px; }
+        .safety-text { color: #ccc; font-size: 13px; line-height: 1.5; }
+
+        /* Home Install Guide */
+        .home-install-guide { margin-top: 40px; text-align: left; padding: 0 10px; }
+        .hig-title { font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 20px; line-height: 1.3; }
+        .hig-desc { font-size: 14px; color: #aaa; margin-bottom: 30px; line-height: 1.6; }
+        .hig-step { margin-bottom: 25px; }
+        .hig-step-title { font-size: 16px; font-weight: 700; color: #FFD700; margin-bottom: 8px; }
+        .hig-step-text { font-size: 14px; color: #ccc; line-height: 1.6; }
+
+        /* Explore Categories - FIXED */
+        .explore-section { margin-top: 50px; text-align: center; }
+        .explore-title { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 15px; }
+        .explore-desc { font-size: 14px; color: #aaa; margin-bottom: 30px; line-height: 1.6; padding: 0 10px; }
+        .explore-card { background: #111; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 30px 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); max-width: 400px; margin: 0 auto 30px auto; transition: transform 0.3s ease; }
+        
+        /* === IMAGE FIX: Width 100% and Height Auto to prevent cropping === */
+        .explore-img { 
+            width: 100%; 
+            height: auto; 
+            border-radius: 15px; 
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5); 
+            margin-bottom: 25px; 
+            border: 1px solid #333; 
+            display: block; 
+        }
+        
+        .ec-title { font-size: 24px; font-weight: 700; color: #fff; margin-bottom: 15px; }
+        .ec-text { font-size: 14px; color: #ccc; line-height: 1.6; text-align: left; }
+
+        /* Premium Features */
+        .features-section { margin-top: 50px; text-align: center; }
+        .pf-title { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 20px; }
+        .pf-desc { font-size: 14px; color: #aaa; margin-bottom: 40px; line-height: 1.6; padding: 0 15px; }
+        .pf-card { background: #111; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 35px 20px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: center; }
+        .pf-icon { width: 70px; height: 70px; margin: 0 auto 20px auto; border-radius: 15px; display: flex; align-items: center; justify-content: center; font-size: 30px; }
+        .pf-icon.red-bg { background: rgba(255, 87, 34, 0.15); color: #ff5722; }
+        .pf-icon.orange-bg { background: rgba(255, 152, 0, 0.15); color: #ff9800; }
+        .pf-icon.blue-bg { background: rgba(33, 150, 243, 0.15); color: #2196f3; }
+        .pf-icon.purple-bg { background: rgba(156, 39, 176, 0.15); color: #9c27b0; }
+        .pf-icon.green-bg { background: rgba(76, 175, 80, 0.15); color: #4caf50; }
+        .pf-card h3 { font-size: 20px; color: #fff; margin-bottom: 10px; font-weight: 700; }
+        .pf-card p { font-size: 13px; color: #ccc; line-height: 1.6; margin: 0; }
+
+        /* Pros and Cons */
+        .pros-cons-container { margin-top: 50px; text-align: center; }
+        .pc-title { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 20px; }
+        .pc-title span { color: #FFD700; }
+        .pc-desc { font-size: 14px; color: #aaa; margin-bottom: 40px; line-height: 1.6; padding: 0 15px; }
+        .pros-box { background: rgba(76, 175, 80, 0.05); border: 1px solid #4caf50; border-radius: 15px; padding: 25px; margin-bottom: 30px; text-align: left; }
+        .pc-item { display: flex; gap: 12px; margin-bottom: 15px; align-items: flex-start; }
+        .pc-item:last-child { margin-bottom: 0; }
+        .pc-item i { margin-top: 3px; font-size: 16px; flex-shrink: 0; }
+        .pc-item span { font-size: 14px; color: #ddd; line-height: 1.5; }
+        .pros-box i { color: #4caf50; }
+        .cons-box { background: rgba(244, 67, 54, 0.05); border: 1px solid #f44336; border-radius: 15px; padding: 25px; text-align: left; }
+        .cons-box i { color: #f44336; }
+
+        /* FAQ */
+        .faq-section { margin-top: 50px; text-align: left; }
+        .faq-header { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 10px; text-align: center; }
+        .faq-header span { color: #ff5722; }
+        .faq-desc { font-size: 14px; color: #aaa; margin-bottom: 30px; text-align: center; padding: 0 15px; line-height: 1.6; }
+        .faq-item { margin-bottom: 15px; border-radius: 8px; overflow: hidden; background: #111; border: 1px solid rgba(255, 255, 255, 0.08); }
+        .faq-question { width: 100%; padding: 18px 20px; background: #151515; border: none; display: flex; justify-content: space-between; align-items: center; font-size: 15px; font-weight: 600; color: #eee; cursor: pointer; transition: 0.3s; }
+        .faq-question:hover { background: #222; }
+        .faq-question.active { background: #ff5722; color: white; }
+        .faq-question i { font-size: 14px; transition: transform 0.3s; }
+        .faq-question.active i { transform: rotate(45deg); }
+        .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background: #111; color: #ccc; font-size: 14px; line-height: 1.6; }
+        .faq-answer p { margin: 0; padding: 20px; }
+
+        /* Conclusion */
+        .conclusion-box { background: #1a1a1a; border: 2px solid #ff5722; border-radius: 15px; padding: 30px 20px; margin-top: 50px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+        .conclusion-title { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 20px; }
+        .conclusion-text { font-size: 14px; color: #ccc; line-height: 1.8; text-align: left; }
+        .conclusion-text span { color: #ff5722; font-weight: 600; }
+
+        /* Testimonials */
+        .testimonials-section { margin-top: 50px; text-align: center; }
+        .testi-header { font-size: 28px; font-weight: 700; color: #fff; margin-bottom: 10px; }
+        .testi-header span { color: #ff5722; }
+        .testi-desc { font-size: 14px; color: #aaa; margin-bottom: 40px; padding: 0 15px; line-height: 1.6; }
+        .testi-card { background: #111; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 20px; padding: 30px; margin-bottom: 25px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .stars { color: #FFD700; margin-bottom: 15px; font-size: 18px; }
+        .testi-text { font-size: 14px; color: #ccc; line-height: 1.7; margin-bottom: 25px; font-style: italic; }
+        .user-profile { display: flex; align-items: center; justify-content: center; gap: 15px; }
+        .user-img { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #FFD700; }
+        .user-info { text-align: left; }
+        .user-name { font-size: 16px; font-weight: 700; color: #fff; margin: 0; }
+        .user-device { font-size: 12px; color: #888; margin: 0; }
+
+        /* Stats Grid */
+        .stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-top: 60px; margin-bottom: 40px; }
+        .stat-item { text-align: center; }
+        .stat-num { font-size: 32px; font-weight: 700; color: #ff5722; margin-bottom: 5px; }
+        .stat-label { font-size: 14px; color: #888; }
+
+        /* === PREMIUM FOOTER STYLES === */
+        footer { margin-top: 60px; padding: 35px 20px 20px 20px; background: #080808; border-top: 1px solid #1a1a1a; width: 100%; box-sizing: border-box; }
+        .footer-content { display: flex; flex-direction: column; align-items: center; text-align: center; width: 100%; max-width: 600px; margin: 0 auto; }
+        
+        .footer-brand { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; justify-content: center; }
+        .f-logo { width: 35px; height: 35px; border-radius: 50%; border: 1px solid #FFD700; display: flex; align-items: center; justify-content: center; overflow: hidden; background: #000; }
+        .f-logo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.2) translateY(-5%); }
+        .f-brand-name { font-size: 18px; font-weight: 700; color: #fff; }
+
+        .footer-links-inline { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 0 0 20px 0; list-style: none; padding: 0; width: 100%; }
+        .footer-links-inline li { margin: 2px 5px; }
+        .footer-links-inline li a { color: #888; font-weight: 500; text-decoration: none; font-size: 13px; transition: 0.3s; cursor: pointer; }
+        .footer-links-inline li a:hover { color: #FFD700; }
+
+        .copyright { font-size: 12px; color: #555; margin-bottom: 15px; display: block; }
+        .social-icons { display: flex; gap: 12px; justify-content: center; width: 100%; }
+        .social-icons a { width: 36px; height: 36px; background: #111; border-radius: 50%; display: flex; align-items: center; justify-content: center; color: #888; text-decoration: none; transition: 0.3s; border: 1px solid #222; font-size: 14px; }
+        .social-icons a:hover { background: #FFD700; color: #000; border-color: #FFD700; }
+        .social-icons a i { line-height: 1; }
+
+
+        /* ============ DOWNLOAD PAGE SECTIONS ============ */
+        #download-section { display: none; }
+
+        .download-heading { font-size: 26px; margin-bottom: 10px; font-weight: 700; }
+        .title-gold { color: #FFD700; }
+        .sub-text { font-size: 14px; color: #ccc; margin-bottom: 40px; line-height: 1.5; }
+
+        .download-card, .info-card, .trouble-card { background: #111; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 15px; padding: 30px 20px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: left; }
+        .download-card { text-align: center; }
+        
+        .icon-circle { width: 80px; height: 80px; background: rgba(37, 99, 235, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; }
+        .icon-circle i { font-size: 35px; color: #3b82f6; }
+        .card-title { font-size: 22px; font-weight: 700; margin-bottom: 5px; color: #fff; }
+        .card-sub { font-size: 13px; color: #888; margin-bottom: 25px; }
+        
+        /* Direct Download Link Here (SERVER SYSTEM UPDATED) */
+        .card-btn { display: block; background: linear-gradient(135deg, #2563eb, #1d4ed8); color: white; padding: 16px; border-radius: 10px; font-weight: 700; text-decoration: none; margin-bottom: 12px; box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3); border: 1px solid #3b82f6; transition: 0.3s; text-align: center; }
+        .card-btn:last-child { margin-bottom: 20px; }
+        .card-btn:active { transform: scale(0.98); }
+        
+        .version-info { font-size: 13px; color: #aaa; margin-bottom: 25px; }
+        .features-list { text-align: left; display: inline-block; margin: 0 auto; }
+        .feature-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #ccc; }
+        .feature-item i { color: #3b82f6; font-size: 12px; }
+
+        /* Legal Section Styles (INTERNAL) */
+        #legal-section { display: none; text-align: left; }
+        .legal-card { background: #111; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 15px; padding: 30px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
+        .legal-title { font-size: 24px; color: #FFD700; margin-bottom: 20px; font-weight: 700; text-align: center; }
+        .legal-content { font-size: 14px; line-height: 1.8; color: #ccc; }
+        .legal-content h3 { color: #fff; margin-top: 25px; font-size: 18px; border-bottom: 1px solid #333; padding-bottom: 8px; }
+        .back-link { color: #3b82f6; cursor: pointer; display: inline-block; margin-bottom: 20px; text-decoration: underline; font-weight: 600; }
+
+        /* Installation Guide */
+        .note-box { background: #fffef2; border: 1px solid #fdd835; border-radius: 12px; padding: 20px; text-align: left; margin-top: 50px; margin-bottom: 25px; color: #444; }
+        .note-title { color: #c67c00; font-weight: 800; font-size: 16px; margin-bottom: 5px; }
+        .note-text { font-size: 14px; line-height: 1.6; }
+        .install-white-card { background: #ffffff; border-radius: 20px; padding: 40px 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.5); text-align: center; color: #333; }
+        .ig-main-icon { width: 80px; height: 80px; margin: 0 auto 15px auto; border-radius: 50%; border: 3px solid #FFD700; background: linear-gradient(45deg, #ff6b33, #FFD700); display: flex; align-items: center; justify-content: center; }
+        .ig-main-icon img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; opacity: 0.9; }
+        .ig-heading { font-size: 24px; font-weight: 800; color: #d35400; line-height: 1.3; margin-bottom: 30px; }
+        .step-row { display: flex; gap: 15px; margin-bottom: 15px; text-align: left; position: relative; }
+        .step-left { display: flex; flex-direction: column; align-items: center; min-width: 50px; }
+        .step-num-circle { width: 50px; height: 50px; background: linear-gradient(135deg, #ff9800, #f57c00); border-radius: 50%; color: #fff; display: flex; flex-direction: column; align-items: center; justify-content: center; font-weight: 700; font-size: 16px; position: relative; z-index: 2; box-shadow: 0 4px 10px rgba(255, 152, 0, 0.4); }
+        .step-num-label { font-size: 10px; font-weight: 400; opacity: 0.9; margin-top: -2px; }
+        .step-arrow { font-size: 20px; color: #ff9800; margin: 5px 0; opacity: 0.8; }
+        .step-content h4 { margin: 0 0 5px 0; font-size: 18px; color: #e65100; font-weight: 700; }
+        .step-content p { margin: 0; font-size: 13px; color: #555; line-height: 1.5; }
+
+        .trouble-header { font-size: 24px; font-weight: 700; color: #fff; margin: 40px 0 25px 0; text-align: center; }
+        .t-title { font-size: 17px; font-weight: 600; color: #FFD700; margin-bottom: 15px; display: flex; align-items: center; gap: 10px; }
+        .t-list { list-style: none; padding: 0; margin: 0; }
+        .t-item { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 12px; font-size: 13px; color: #bbb; line-height: 1.5; }
+        .t-item i { margin-top: 4px; color: #555; font-size: 12px; }
+        .help-section { text-align: center; margin-top: 40px; padding: 30px 20px; background: #111; border-radius: 15px; border: 1px solid rgba(59, 130, 246, 0.2); }
+        .help-title { font-size: 22px; font-weight: 700; margin-bottom: 10px; color: #fff; }
+        .help-desc { font-size: 14px; color: #aaa; margin-bottom: 25px; line-height: 1.6; }
+        .help-buttons { display: flex; flex-direction: column; gap: 10px; }
+        .btn-outline, .btn-primary-small { cursor: pointer; display: block; padding: 12px; border-radius: 8px; font-weight: 600; font-size: 14px; text-decoration: none; transition: 0.3s; }
+        .btn-outline { border: 1px solid #333; color: #ccc; background: transparent; }
+        .btn-outline:hover { background: #222; border-color: #555; color: #fff; }
+        .btn-primary-small { background: #2563eb; color: #fff; border: none; }
+        .btn-primary-small:hover { background: #1d4ed8; }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-brand" onclick="goHome()" role="button" tabindex="0" aria-label="Go to Homepage">
+            <!-- Nav Logo Box: Updated CSS removes zoom and contains image -->
+            <div class="nav-logo-box"><img src="logo.jpg" alt="GOALZEN Logo" width="45" height="45"></div>
+            <div class="brand-name">GOAL<span>ZEN</span></div>
+        </div>
+    </nav>
+
+    <main>
+        
+        <!-- ============ HOME SECTION ============ -->
+        <div id="home-section" class="fade-in">
+            <!-- Hero Section -->
+            <div class="main-logo-box">
+                <img src="logo.jpg" class="main-logo-img" alt="GOALZEN Main Logo" width="150" height="150" fetchpriority="high">
+            </div>
+            
+            <h1><span class="highlight">GOALZEN</span> – Global No.1 Live Sports App</h1>
+            <p class="short-desc">Experience the thrill of the game without limits. Watch live cricket, football leagues, and global sports events in Ultra HD quality with zero buffering.</p>
+            <div class="meta-info">
+                <span><i class="fab fa-android"></i> Android 5.0+</span>
+                <span><i class="fas fa-code-branch"></i> Version 2.3</span>
+                <span><i class="fas fa-file-download"></i> 13 MB</span>
+            </div>
+            
+            <div class="download-btn" onclick="openDownloadPage()" role="button" tabindex="0" aria-label="Go to Download Page">
+                <i class="fas fa-download"></i> Download APK
+            </div>
+
+            <div class="text-content">
+                <p>Discover the ultimate sports streaming experience with GOALZEN. This all-in-one solution is designed specifically for sports lovers who want a premium viewing experience without the cost. The latest version brings cooler features, enhanced stability, and a smoother interface.</p>
+                <p>For anyone who wants to enjoy non-stop, free cricket streaming and live sports events, there is no better choice. GOALZEN provides a unique, buffer-free environment that makes watching your favorite matches easier.</p>
+            </div>
+
+            <section class="info-box-home" aria-labelledby="about-heading">
+                <h2 id="about-heading">What is GOALZEN?</h2>
+                <p>
+                    GOALZEN stands as one of the premier choices for Android users seeking free, high-quality live sports streaming. While famous for its extensive cricket coverage, it doesn't stop there. Users can dive into a world of diverse sports entertainment including Football leagues, WWE events, Rugby, and other popular global sports.
+                </p>
+                <p>
+                    Built with a user-first approach, the app offers a clean, intuitive interface that eliminates navigation hassles. We prioritize your viewing experience by ensuring zero pop-up ads and delivering streams in crystal-clear HD. Plus, our smart adaptive technology adjusts to your internet speed, ensuring smooth playback on any Android device.
+                </p>
+            </section>
+
+            <!-- APK DETAILS CARD -->
+            <section class="apk-details-card" aria-label="APK Technical Details">
+                <div class="apk-details-header">GOALZEN APK Details</div>
+                <div class="apk-details-sub">Get all the technical information about the latest version.</div>
+
+                <div class="details-logo-wrap">
+                    <img src="logo.jpg" alt="GOALZEN Icon" width="80" height="80" loading="lazy">
+                </div>
+                <div class="detail-row"><span class="d-label">App Name:</span><span class="d-val">GOALZEN</span></div>
+                <div class="detail-row"><span class="d-label">Developer:</span><span class="d-val">Fluxy Studio</span></div>
+                <div class="detail-row"><span class="d-label">Version:</span><span class="d-val badge-ver">v2.3</span></div>
+                <div class="detail-row"><span class="d-label">File Size:</span><span class="d-val">13 MB</span></div>
+                <div class="detail-row"><span class="d-label">Compatibility:</span><span class="d-val">Android 5.0+</span></div>
+                <div class="detail-row"><span class="d-label">Genre:</span><span class="d-val">Sports Streaming</span></div>
+                <div class="detail-row"><span class="d-label">Pricing:</span><span class="d-val badge-free">Free</span></div>
+                <div class="detail-row"><span class="d-label">Last Updated:</span><span class="d-val">February 24, 2025</span></div>
+                
+                <div class="btn-centered-blue" onclick="openDownloadPage()" role="button" tabindex="0" aria-label="Download Latest Version">
+                    Download Latest Version <i class="fas fa-download" style="margin-left:8px;"></i>
+                </div>
+            </section>
+
+            <!-- WHAT'S NEW SECTION -->
+            <section class="wn-container" aria-labelledby="new-heading">
+                <h2 id="new-heading" class="wn-header">What’s New in v2.3</h2>
+                <div class="wn-sub">This latest version brings significant improvements and new features.</div>
+
+                <div class="wn-card">
+                    <div class="wn-icon green"><i class="fas fa-check-circle"></i></div>
+                    <div class="wn-content"><h4>Better Experience</h4><p>Faster and smoother performance across all Android devices from version 5.0 to latest.</p></div>
+                </div>
+                <div class="wn-card">
+                    <div class="wn-icon blue"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="wn-content"><h4>Compatibility Fix</h4><p>Stable and optimized for older Android devices with improved compatibility.</p></div>
+                </div>
+                <div class="wn-card">
+                    <div class="wn-icon purple"><i class="fas fa-exclamation-circle"></i></div>
+                    <div class="wn-content"><h4>Bug Fixes</h4><p>Fixed crashes, audio-video sync issues, and reduced buffering during live streams.</p></div>
+                </div>
+                <div class="wn-card">
+                    <div class="wn-icon orange"><i class="fas fa-shield-alt"></i></div>
+                    <div class="wn-content"><h4>Build-In VPN</h4><p>Integrated VPN for better streaming performance and privacy protection.</p></div>
+                </div>
+
+                <div class="safety-box">
+                    <div class="safety-title">Safety First:</div>
+                    <div class="safety-text">Always download from trusted sources. Our APK is 100% safe, virus-free, and tested on multiple devices.</div>
+                </div>
+            </section>
+
+            <!-- HOME PAGE INSTALL GUIDE -->
+            <section class="home-install-guide" aria-labelledby="install-heading">
+                <h2 id="install-heading" class="hig-title">How To Download And Install GOALZEN APK</h2>
+                <p class="hig-desc">Downloading and installing GOALZEN on any Android device is easy and straightforward. All you need to do is follow the detailed steps below:</p>
+
+                <div class="hig-step">
+                    <div class="hig-step-title">1. Download the APK</div>
+                    <div class="hig-step-text">Navigate to the download section on this page and click the download button to get the latest updated APK file.</div>
+                </div>
+
+                <div class="hig-step">
+                    <div class="hig-step-title">2. Enable Unknown Sources</div>
+                    <div class="hig-step-text">Go to Settings > Security > Unknown Sources and enable it to allow APK installation.</div>
+                </div>
+
+                <div class="hig-step">
+                    <div class="hig-step-title">3. Install the APK</div>
+                    <div class="hig-step-text">Open the downloaded APK file and tap install to begin the installation process.</div>
+                </div>
+
+                <div class="hig-step">
+                    <div class="hig-step-title">4. Launch</div>
+                    <div class="hig-step-text">Open the app, grant necessary permissions, and start streaming your favorite content.</div>
+                </div>
+            </section>
+
+            <!-- EXPLORE CATEGORIES -->
+            <section class="explore-section" aria-labelledby="explore-heading">
+                <h2 id="explore-heading" class="explore-title">Explore <span class="highlight">Categories</span></h2>
+                <p class="explore-desc">
+                    Navigate through organized content sections to find exactly what you want to watch. Everything is placed in easy-to-access categories.
+                </p>
+
+                <div class="explore-card">
+                    <img src="Live.jpg" alt="Live Sports Events" class="explore-img" width="360" height="200" loading="lazy">
+                    <h3 class="ec-title">Live Events</h3>
+                    <p class="ec-text">
+                        Catch every moment as it happens. Stream live matches from major leagues like IPL, ICC, EPL, and WWE directly on your device without interruptions.
+                    </p>
+                </div>
+
+                <div class="explore-card">
+                    <img src="Sports.jpg" alt="Sports Channels List" class="explore-img" width="360" height="200" loading="lazy">
+                    <h3 class="ec-title">Sports Channels</h3>
+                    <p class="ec-text">
+                        Access a vast library of premium sports networks. Watch 24/7 live coverage from Star Sports, Sony Ten, Sky Sports, Willow TV, and more.
+                    </p>
+                </div>
+
+                <div class="explore-card">
+                    <img src="Highlight.jpg" alt="Match Highlights" class="explore-img" width="360" height="200" loading="lazy">
+                    <h3 class="ec-title">Highlights</h3>
+                    <p class="ec-text">
+                        Missed the game? No problem. Catch up on key moments, wickets, goals, and match summaries with our extensive highlights section available anytime.
+                    </p>
+                </div>
+
+                <div class="explore-card">
+                    <img src="World.jpg" alt="World TV Channels" class="explore-img" width="360" height="200" loading="lazy">
+                    <h3 class="ec-title">World TV</h3>
+                    <p class="ec-text">
+                        Go beyond sports. Explore a wide range of international TV channels covering news, entertainment, and movies from around the globe.
+                    </p>
+                </div>
+            </section>
+
+            <!-- PREMIUM FEATURES -->
+            <section class="features-section" aria-labelledby="features-heading">
+                <h2 id="features-heading" class="pf-title">Premium Features of <span class="highlight">GOALZEN</span></h2>
+                <p class="pf-desc">Experience the ultimate sports streaming app with features that rival premium services, all completely free of charge.</p>
+
+                <div class="pf-card">
+                    <div class="pf-icon red-bg"><i class="fas fa-list-ul"></i></div>
+                    <h3>Custom Playlist Support</h3>
+                    <p>Import your own IPTV playlists and enjoy more flexibility with personalized content organization.</p>
+                </div>
+
+                <div class="pf-card">
+                    <div class="pf-icon orange-bg"><i class="fas fa-language"></i></div>
+                    <h3>Multi-Language Commentary</h3>
+                    <p>Enjoy live matches with commentary in multiple languages including English, Hindi, and regional options.</p>
+                </div>
+
+                <div class="pf-card">
+                    <div class="pf-icon blue-bg"><i class="fas fa-tv"></i></div>
+                    <h3>100% Live Streaming</h3>
+                    <p>Real-time streaming of cricket, football, tennis, and Formula 1 with multiple server options for uninterrupted viewing.</p>
+                </div>
+
+                <div class="pf-card">
+                    <div class="pf-icon purple-bg"><i class="fas fa-bell"></i></div>
+                    <h3>Live Match Alerts</h3>
+                    <p>Get instant notifications for match starts, goals, overs, final results, and key moments.</p>
+                </div>
+
+                <div class="pf-card">
+                    <div class="pf-icon green-bg"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Built-in VPN</h3>
+                    <p>Enhanced privacy and reduced buffering with integrated VPN technology for secure streaming.</p>
+                </div>
+            </section>
+
+            <!-- PROS AND CONS -->
+            <section class="pros-cons-container" aria-labelledby="pros-cons-heading">
+                <h2 id="pros-cons-heading" class="pc-title">Pros <span>and</span> Cons</h2>
+                <p class="pc-desc">While it’s an outstanding app, there are downsides and upsides about the app that should be mentioned.</p>
+
+                <div class="pros-box">
+                    <div class="pc-item"><i class="fas fa-check-circle"></i> <span>Completely free with no registration required</span></div>
+                    <div class="pc-item"><i class="fas fa-check-circle"></i> <span>Features more than just cricket sports and events</span></div>
+                    <div class="pc-item"><i class="fas fa-check-circle"></i> <span>Built-in VPN for faster streams and less buffering</span></div>
+                    <div class="pc-item"><i class="fas fa-check-circle"></i> <span>Allows playlist imports and casting to other screens</span></div>
+                    <div class="pc-item"><i class="fas fa-check-circle"></i> <span>HD quality streams that adapt to internet speed</span></div>
+                    <div class="pc-item"><i class="fas fa-check-circle"></i> <span>100+ premium sports channels available</span></div>
+                    <div class="pc-item"><i class="fas fa-check-circle"></i> <span>Multi-language commentary support</span></div>
+                    <div class="pc-item"><i class="fas fa-check-circle"></i> <span>Ad-free experience with no pop-ups</span></div>
+                </div>
+
+                <div class="cons-box">
+                    <div class="pc-item"><i class="fas fa-times-circle"></i> <span>Doesn’t comply with Google Play Protect policies</span></div>
+                    <div class="pc-item"><i class="fas fa-times-circle"></i> <span>Not available on Google Play Store</span></div>
+                </div>
+            </section>
+
+            <!-- FAQ SECTION -->
+            <section class="faq-section" aria-labelledby="faq-heading">
+                <h2 id="faq-heading" class="faq-header">Frequently Asked <span>Questions</span></h2>
+                <p class="faq-desc">Find answers to common questions about installation, features, and troubleshooting.</p>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Is GOALZEN free? <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p>Yes, GOALZEN APK is completely free to download and use. You don't need any subscription or registration to enjoy all features.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Is it available on Google Play Store? <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p>Currently, there is no official version of GOALZEN available on the Play Store. You need to download the APK directly from our website.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Is it safe to download? <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p>Yes, the app is 100% safe. We verify all files for viruses and malware before hosting them. Always download from our official page.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">What devices are compatible? <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p>GOALZEN is compatible with all Android devices running version 5.0 or higher, including Smartphones, Tablets, Android TV, FireStick, and Smart Boxes.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Does it require internet connection? <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p>Yes, since it is a live streaming app, you need a stable internet connection (Wi-Fi or Mobile Data) to watch content in HD quality without buffering.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">Can I cast to other screens? <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p>Absolutely! The app supports Chromecast and screen mirroring, allowing you to watch live sports on your Smart TV or PC.</p></div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">How to fix 'Unexpected Error'? <i class="fas fa-plus"></i></button>
+                    <div class="faq-answer"><p>If you face this error, try clearing the app cache, checking your internet connection, or using the built-in VPN to switch servers.</p></div>
+                </div>
+            </section>
+
+            <!-- CONCLUSION BOX -->
+            <div class="conclusion-box">
+                <div class="conclusion-title">Conclusion</div>
+                <p class="conclusion-text">
+                    GOALZEN is more than just a streaming app—it’s a complete sports hub for Android users. With support for multiple channels, languages, devices, and playlists, it’s perfect for anyone who wants to stream live sports on the go.
+                    <br><br>
+                    Just remember to download the app from our site to avoid fake versions. Whether you’re following the <span>IPL, BPL, PSL, UEFA, UFC, or WWE</span>, GOALZEN has you covered.
+                </p>
+            </div>
+
+            <!-- TESTIMONIALS SECTION -->
+            <section class="testimonials-section" aria-labelledby="testi-heading">
+                <h2 id="testi-heading" class="testi-header">What Our <span>Users Say</span></h2>
+                <p class="testi-desc">Join over 1 million users who trust GOALZEN for their sports streaming needs. Here’s what real users are saying about their experience.</p>
+
+                <!-- Review 1 -->
+                <div class="testi-card">
+                    <div class="stars" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testi-text">"Outstanding app! I’ve been using GOALZEN for 6 months now and it’s simply the best cricket streaming app. The HD quality is amazing and no ads interrupting matches. Built-in VPN works perfectly!"</p>
+                    <div class="user-profile">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User Avatar" class="user-img" width="50" height="50" loading="lazy">
+                        <div class="user-info">
+                            <h4 class="user-name">Rajesh Kumar</h4>
+                            <p class="user-device">Samsung Galaxy S21</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="testi-card">
+                    <div class="stars" aria-label="5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testi-text">"Finally found a reliable cricket streaming app that actually works! Live IPL matches stream smoothly without any buffering. The multi-language commentary feature is a game changer."</p>
+                    <div class="user-profile">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="User Avatar" class="user-img" width="50" height="50" loading="lazy">
+                        <div class="user-info">
+                            <h4 class="user-name">Priya Sharma</h4>
+                            <p class="user-device">OnePlus 9</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="testi-card">
+                    <div class="stars" aria-label="4.5 out of 5 stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></div>
+                    <p class="testi-text">"Been searching for a free cricket app for ages. GOALZEN delivers exactly what it promises – live cricket, football, WWE and more. Installation was super easy following the guide."</p>
+                    <div class="user-profile">
+                        <img src="https://randomuser.me/api/portraits/men/86.jpg" alt="User Avatar" class="user-img" width="50" height="50" loading="lazy">
+                        <div class="user-info">
+                            <h4 class="user-name">Mohammed Ali</h4>
+                            <p class="user-device">Redmi Note 12</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- NEW REVIEWS -->
+                <div class="testi-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testi-text">"Absolutely brilliant! Watching the Premier League from London without any glitch. The picture quality is top-notch and the channel selection is massive."</p>
+                    <div class="user-profile">
+                        <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="User Avatar" class="user-img" width="50" height="50" loading="lazy">
+                        <div class="user-info">
+                            <h4 class="user-name">James Wilson</h4>
+                            <p class="user-device">Pixel 7 Pro - UK</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testi-text">"Muy bien application! Perfect for watching La Liga matches. It works smoothly on my Android TV box with zero buffering. Highly recommended!"</p>
+                    <div class="user-profile">
+                        <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User Avatar" class="user-img" width="50" height="50" loading="lazy">
+                        <div class="user-info">
+                            <h4 class="user-name">Mateo Garcia</h4>
+                            <p class="user-device">Xiaomi TV Box - Spain</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testi-text">"Finally a way to catch WWE and UFC events live without paying huge subscriptions. Great job team, streaming quality is fantastic here in NYC!"</p>
+                    <div class="user-profile">
+                        <img src="https://randomuser.me/api/portraits/men/33.jpg" alt="User Avatar" class="user-img" width="50" height="50" loading="lazy">
+                        <div class="user-info">
+                            <h4 class="user-name">David Brown</h4>
+                            <p class="user-device">Samsung S23 Ultra - USA</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testi-card">
+                    <div class="stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <p class="testi-text">"Khub sundor app! BPL ar World Cup er jonno best. Gramer barite bosheo HD te khela dekhte parchi kono buffering charai. Thanks GOALZEN!"</p>
+                    <div class="user-profile">
+                        <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="User Avatar" class="user-img" width="50" height="50" loading="lazy">
+                        <div class="user-info">
+                            <h4 class="user-name">Tanvir Ahmed</h4>
+                            <p class="user-device">Vivo V27 - Bangladesh</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STATS COUNTER -->
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-num">1M+</div>
+                    <div class="stat-label">Downloads</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">4.8</div>
+                    <div class="stat-label">User Rating</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">100+</div>
+                    <div class="stat-label">TV Channels</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-num">24/7</div>
+                    <div class="stat-label">Live Streaming</div>
+                </div>
+            </div>
+
+            <!-- FOOTER (HOME) -->
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="f-logo"><img src="logo.jpg" alt="Footer Logo" width="35" height="35" loading="lazy"></div>
+                        <div class="f-brand-name">GOAL<span>ZEN</span></div>
+                    </div>
+                    
+                    <ul class="footer-links-inline">
+                        <li><a onclick="goHome()">Home</a></li>
+                        <li><a onclick="showLegal('about')">About Us</a></li>
+                        <li><a onclick="showLegal('contact')">Contact Us</a></li>
+                        <li><a onclick="showLegal('disclaimer')">Disclaimer</a></li>
+                        <li><a onclick="showLegal('dmca')">DMCA</a></li>
+                        <li><a onclick="showLegal('privacy')">Privacy Policy</a></li>
+                    </ul>
+
+                    <div class="footer-bottom">
+                        <p class="copyright">© 2026 GOALZEN. All rights reserved.</p>
+                        <div class="social-icons">
+                            <a href="https://t.me/LivXow_support_bot" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://t.me/LivXow_support_bot" aria-label="Telegram"><i class="fab fa-telegram-plane"></i></a>
+                            <a href="https://t.me/LivXow_support_bot" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- ============ DOWNLOAD PAGE ============ -->
+        <div id="download-section" class="fade-in">
+            <h1 class="download-heading">Download <span class="title-gold">GOALZEN</span></h1>
+            <p class="sub-text">Get the latest version of GOALZEN and enjoy unlimited live sports streaming on all your devices.</p>
+
+            <div class="download-card">
+                <div class="icon-circle"><i class="fas fa-mobile-alt"></i></div>
+                <div class="card-title">Android APK</div>
+                <div class="card-sub">Compatible with Android 5.0 and above</div>
+                
+                <!-- SERVER SYSTEM BUTTONS -->
+                <div class="server-btns-v2" style="display: flex; flex-direction: column; gap: 10px; margin-bottom: 10px;">
+                    <a href="https://github.com/livowbbbb/apk/raw/main/LivXow 2.3.apk" class="card-btn" style="margin-bottom: 0;" target="_blank">Server 1</a>
+                    <a href="https://livxow-apk-one.vercel.app" class="card-btn" style="margin-bottom: 0;" target="_blank">Server 2</a>
+                    <a href="https://livxow-apk-one.vercel.app" class="card-btn" style="margin-bottom: 0;" target="_blank">Server 3</a>
+                    <a href="https://t.me/LivXowAPK" class="card-btn" style="margin-bottom: 0;" target="_blank">Server 4</a>
+                </div>
+
+                <div class="version-info">Version 2.3 • 13 MB</div>
+                <div class="features-list">
+                    <div class="feature-item"><i class="fas fa-check"></i> HD/FHD streaming quality</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Chromecast support</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Picture-in-picture mode</div>
+                    <div class="feature-item"><i class="fas fa-check"></i> Live score updates</div>
+                </div>
+            </div>
+
+            <!-- Installation Guide -->
+            <div class="note-box">
+                <div class="note-title">Important Note:</div>
+                <div class="note-text">For Android 8.0+, you'll see an <b>“Allow from this source”</b> prompt. Simply tap <b>“Allow”</b> when installing the APK.</div>
+            </div>
+            <div class="install-white-card">
+                <div class="ig-main-icon"><img src="logo.jpg" alt="Installation Icon" width="80" height="80" loading="lazy"></div>
+                <div class="ig-heading">How to Download &<br>Install GOALZEN APK?</div>
+                <div class="step-row">
+                    <div class="step-left"><div class="step-num-circle">01<span class="step-num-label">APK</span></div><div class="step-arrow"><i class="fas fa-arrow-down"></i></div></div>
+                    <div class="step-content"><h4>Download the APK</h4><p>Navigate to the download section on this page and click the download button to get the latest updated APK version.</p></div>
+                </div>
+                <div class="step-row">
+                    <div class="step-left"><div class="step-num-circle">02<span class="step-num-label"><i class="fas fa-toggle-on"></i></span></div><div class="step-arrow"><i class="fas fa-arrow-down"></i></div></div>
+                    <div class="step-content"><h4>Enable Unknown Sources</h4><p>For older Android OS: Go to Settings > Security > Unknown Sources > enable it.<br>Newer Android: Click Allow when prompted.</p></div>
+                </div>
+                <div class="step-row">
+                    <div class="step-left"><div class="step-num-circle">03<span class="step-num-label"><i class="fas fa-download"></i></span></div><div class="step-arrow"><i class="fas fa-arrow-down"></i></div></div>
+                    <div class="step-content"><h4>Install the APK</h4><p>Right after downloading the file, go to file manager, click on it and tap Install.</p></div>
+                </div>
+                <div class="step-row">
+                    <div class="step-left"><div class="step-num-circle">04<span class="step-num-label"><i class="fas fa-play"></i></span></div></div>
+                    <div class="step-content"><h4>Launch GOALZEN</h4><p>Open the app, grant necessary permissions, and start streaming your preferred content!</p></div>
+                </div>
+            </div>
+
+            <div class="trouble-header">Troubleshooting</div>
+            <div class="trouble-card">
+                <div class="t-title"><i class="fas fa-exclamation-triangle"></i> App Won’t Install</div>
+                <ul class="t-list">
+                    <li class="t-item"><i class="fas fa-check-circle"></i> Check available storage space.</li>
+                    <li class="t-item"><i class="fas fa-check-circle"></i> Restart your device.</li>
+                </ul>
+            </div>
+            <div class="trouble-card">
+                <div class="t-title"><i class="fas fa-video"></i> Streaming Issues</div>
+                <ul class="t-list">
+                    <li class="t-item"><i class="fas fa-check-circle"></i> Check your internet connection.</li>
+                    <li class="t-item"><i class="fas fa-check-circle"></i> Try switching servers.</li>
+                </ul>
+            </div>
+            <div class="trouble-card">
+                <div class="t-title"><i class="fas fa-volume-up"></i> Audio/Video Sync</div>
+                <ul class="t-list">
+                    <li class="t-item"><i class="fas fa-check-circle"></i> Pause and resume.</li>
+                    <li class="t-item"><i class="fas fa-check-circle"></i> Change quality.</li>
+                </ul>
+            </div>
+            <div class="trouble-card">
+                <div class="t-title"><i class="fas fa-tv"></i> FireStick Remote Issues</div>
+                <ul class="t-list">
+                    <li class="t-item"><i class="fas fa-check-circle"></i> Use directional pad.</li>
+                    <li class="t-item"><i class="fas fa-check-circle"></i> Press OK/Select.</li>
+                </ul>
+            </div>
+
+            <div class="help-section">
+                <div class="help-title">Need Help?</div>
+                <p class="help-desc">Our support team is here to help.</p>
+                <div class="help-buttons">
+                    <a href="https://t.me/LivXow_support_bot" class="btn-primary-small" target="_blank">Contact Support</a>
+                </div>
+            </div>
+            
+            <div style="margin-top: 30px; color: #888; cursor: pointer; text-decoration: underline;" onclick="goHome()" role="button" tabindex="0">&larr; Back to Home</div>
+
+            <!-- FOOTER (DOWNLOAD) -->
+            <footer>
+                <div class="footer-content">
+                    <div class="footer-brand">
+                        <div class="f-logo"><img src="logo.jpg" alt="Footer Logo" width="35" height="35" loading="lazy"></div>
+                        <div class="f-brand-name">GOAL<span>ZEN</span></div>
+                    </div>
+                    <p class="copyright">© 2026 GOALZEN. All rights reserved.</p>
+                </div>
+            </footer>
+        </div>
+
+        <!-- ============ LEGAL PAGES (INTERNAL) ============ -->
+        <div id="legal-section" class="fade-in">
+            <div class="back-link" onclick="goHome()">&larr; Back to Home</div>
+            <div class="legal-card">
+                <h2 id="legal-title" class="legal-title">Page Title</h2>
+                <div id="legal-content" class="legal-content">
+                    <!-- Dynamic content -->
+                </div>
+            </div>
+            <footer>
+                <p class="copyright">© 2026 GOALZEN. All rights reserved.</p>
+            </footer>
+        </div>
+
+    </main>
+
+    <script defer>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Set initial history state
+            window.history.replaceState({page: 'home'}, 'Home', '');
+
+            window.openDownloadPage = function() {
+                hideAllSections();
+                document.getElementById('download-section').style.display = 'block';
+                window.scrollTo(0, 0);
+                window.history.pushState({page: 'download'}, 'Download', '#download');
+            };
+
+            window.goHome = function() {
+                hideAllSections();
+                document.getElementById('home-section').style.display = 'block';
+                window.scrollTo(0, 0);
+                window.history.pushState({page: 'home'}, 'Home', ' ');
+            };
+
+            function hideAllSections() {
+                document.getElementById('home-section').style.display = 'none';
+                document.getElementById('download-section').style.display = 'none';
+                document.getElementById('legal-section').style.display = 'none';
+            }
+
+            // Legal Pages Content Logic
+            window.showLegal = function(page) {
+                hideAllSections();
+                const title = document.getElementById('legal-title');
+                const content = document.getElementById('legal-content');
+                document.getElementById('legal-section').style.display = 'block';
+                window.scrollTo(0, 0);
+
+                if(page === 'dmca') {
+                    title.innerText = "DMCA Policy";
+                    content.innerHTML = `<p>GOALZEN respects the intellectual property rights of others. We do not host any copyrighted video files or live streams on our servers.</p><h3>Content Removal</h3><p>The content provided in this app is indexed from third-party sources available on the public web. If you are the owner of any content and want it removed, please contact our support bot with legal evidence.</p>`;
+                } else if(page === 'privacy') {
+                    title.innerText = "Privacy Policy";
+                    content.innerHTML = `<p>At GOALZEN, we are committed to protecting your privacy.</p><h3>Data Collection</h3><p>We do not collect any personal data such as names, emails, or phone numbers. The app works without any user registration.</p><h3>Third-party Ads</h3><p>Our advertising partners may use cookies to provide personalized ads.</p>`;
+                } else if(page === 'disclaimer') {
+                    title.innerText = "Disclaimer";
+                    content.innerHTML = `<p>The information and content provided by GOALZEN are for entertainment purposes only.</p><h3>No Liability</h3><p>We are not responsible for any issues arising from third-party links or broadcasters. Users stream at their own risk.</p>`;
+                } else if(page === 'contact') {
+                    title.innerText = "Contact Us";
+                    content.innerHTML = `<p>Need technical support or want to provide feedback? Our team is available 24/7.</p><h3>Official Support</h3><p><b>Support Bot:</b> <a href="https://t.me/LivXow_support_bot" style="color:#3b82f6;">@LivXow_support_bot</a></p><p>We typically respond within a few hours.</p>`;
+                } else if(page === 'about') {
+                    title.innerText = "About Us";
+                    content.innerHTML = `<p>GOALZEN is the #1 destination for free live sports streaming. We aim to bring premium sports content to fans worldwide without expensive subscriptions.</p>`;
+                }
+                window.history.pushState({page: 'legal'}, 'Legal', '#legal');
+            };
+
+            // Handle Back Button Logic
+            window.onpopstate = function(event) {
+                hideAllSections();
+                if (event.state && event.state.page === 'download') {
+                    document.getElementById('download-section').style.display = 'block';
+                } else if (event.state && event.state.page === 'legal') {
+                    document.getElementById('legal-section').style.display = 'block';
+                } else {
+                    document.getElementById('home-section').style.display = 'block';
+                }
+            };
+
+            // FAQ Toggle Logic
+            const faqs = document.querySelectorAll('.faq-question');
+            faqs.forEach(faq => {
+                faq.addEventListener('click', () => {
+                    const isExpanded = faq.getAttribute('aria-expanded') === 'true';
+                    faq.setAttribute('aria-expanded', !isExpanded);
+                    faq.classList.toggle('active');
+                    const answer = faq.nextElementSibling;
+                    if (faq.classList.contains('active')) {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                    } else {
+                        answer.style.maxHeight = 0;
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
