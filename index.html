@@ -258,6 +258,19 @@
         .feature-item { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; font-size: 14px; color: #ccc; }
         .feature-item i { color: #3b82f6; font-size: 12px; }
 
+        .tv-code-card { background: #111; border: 1px solid rgba(255, 215, 0, 0.15); border-radius: 15px; padding: 30px 20px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); text-align: center; }
+        .tv-icon-circle { width: 80px; height: 80px; background: rgba(255, 215, 0, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; }
+        .tv-icon-circle i { font-size: 35px; color: #FFD700; }
+        .tv-desc { font-size: 13px; color: #bbb; line-height: 1.6; margin-bottom: 22px; }
+        .code-box-row { background: #181818; border: 1px solid #2c2c2c; border-radius: 12px; padding: 14px 16px; margin-bottom: 12px; display: flex; align-items: center; justify-content: space-between; gap: 12px; text-align: left; }
+        .code-box-info { display: flex; flex-direction: column; gap: 3px; }
+        .code-label { font-size: 12px; color: #999; font-weight: 500; }
+        .code-value { font-size: 18px; font-weight: 700; color: #FFD700; letter-spacing: 0.8px; }
+        .copy-code-btn { background: linear-gradient(135deg, #2563eb, #1d4ed8); color: #fff; border: 1px solid #3b82f6; border-radius: 8px; padding: 8px 14px; font-size: 12px; font-weight: 600; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; transition: 0.3s; flex-shrink: 0; font-family: 'Poppins', sans-serif; }
+        .copy-code-btn:active { transform: scale(0.95); }
+        .copy-code-btn.copied { background: #4caf50; border-color: #4caf50; }
+        .tv-tip { font-size: 12px; color: #888; margin-top: 15px; margin-bottom: 0; line-height: 1.5; }
+
         #legal-section { display: none; text-align: left; }
         .legal-card { background: #111; border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 15px; padding: 30px; margin-bottom: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); }
         .legal-title { font-size: 24px; color: #FFD700; margin-bottom: 20px; font-weight: 700; text-align: center; }
@@ -717,6 +730,31 @@
                 </div>
             </div>
 
+            <div class="tv-code-card">
+                <div class="tv-icon-circle"><i class="fas fa-tv"></i></div>
+                <div class="card-title">Android TV & FireStick</div>
+                <div class="card-sub">Quick Install Codes for Smart TV Devices</div>
+                <p class="tv-desc">These codes are specially made for <b>Android TV, Amazon FireStick, Google TV, and Smart TV Box</b> users. Simply enter the code in the Downloader or Unlinked app to install GOALZEN directly on your TV.</p>
+
+                <div class="code-box-row">
+                    <div class="code-box-info">
+                        <span class="code-label">Downloader App Code</span>
+                        <span class="code-value">5634135</span>
+                    </div>
+                    <button type="button" class="copy-code-btn" onclick="copyAppCode('5634135', this)"><i class="fas fa-copy"></i> Copy</button>
+                </div>
+
+                <div class="code-box-row">
+                    <div class="code-box-info">
+                        <span class="code-label">Unlinked App Code</span>
+                        <span class="code-value">Goalzenapp</span>
+                    </div>
+                    <button type="button" class="copy-code-btn" onclick="copyAppCode('Goalzenapp', this)"><i class="fas fa-copy"></i> Copy</button>
+                </div>
+
+                <p class="tv-tip">Open the <b>Downloader</b> or <b>Unlinked</b> app on your TV, type the code above, and click Go to download GOALZEN APK.</p>
+            </div>
+
             <div class="note-box">
                 <div class="note-title">Important Note:</div>
                 <div class="note-text">For Android 8.0+, you'll see an <b>“Allow from this source”</b> prompt. Simply tap <b>“Allow”</b> when installing the APK.</div>
@@ -835,6 +873,36 @@
                 document.getElementById('download-section').style.display = 'none';
                 document.getElementById('legal-section').style.display = 'none';
             }
+
+            window.copyAppCode = function(code, btn) {
+                const showCopied = () => {
+                    btn.classList.add('copied');
+                    btn.innerHTML = '<i class="fas fa-check"></i> Copied';
+                    setTimeout(() => {
+                        btn.classList.remove('copied');
+                        btn.innerHTML = '<i class="fas fa-copy"></i> Copy';
+                    }, 1800);
+                };
+                if (navigator.clipboard && navigator.clipboard.writeText) {
+                    navigator.clipboard.writeText(code).then(showCopied).catch(() => {
+                        const tempInput = document.createElement('textarea');
+                        tempInput.value = code;
+                        document.body.appendChild(tempInput);
+                        tempInput.select();
+                        document.execCommand('copy');
+                        document.body.removeChild(tempInput);
+                        showCopied();
+                    });
+                } else {
+                    const tempInput = document.createElement('textarea');
+                    tempInput.value = code;
+                    document.body.appendChild(tempInput);
+                    tempInput.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempInput);
+                    showCopied();
+                }
+            };
 
             window.showLegal = function(page) {
                 hideAllSections();
